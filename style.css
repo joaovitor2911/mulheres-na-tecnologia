@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #1612129a;
+}
+
+.header {
+    background-color: #333;
+    color: aqua;
+    text-align: center;
+    padding: 50px, 0;
+    
+}
+
+.header h1 {
+    font-size: 6em;
+}
+
+.header p {
+    font-size: 1.5em;
+   
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background-color: #645;
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    text-align: justify;
+    border-radius:20px;
+}
+
+.box h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.box p::selection {
+    background-color: rgb(255, 118, 69);
+    color: rgb(184, 86, 233);
+
+}
+
+.footer {
+    background-color: #333;
+    color: aqua;
+    text-align: center;
+    padding: 20px, 0;
+    margin-top: 20px;
+}
+
+.parallax1 {
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/07/19/59/street-art-2046929_1280.jpg);
+}
+
+.parallax2 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/27/21/05/sport-1284275_1280.jpg);
+}
+
+.parallax3 {
+    background-image: url(https://cdn.pixabay.com/photo/2023/09/26/15/46/ai-generated-8277695_1280.jpg);
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media(max-width:480px){
+    .header h1 {
+        font-size: 4em;
+    }
+    .box {
+       
+        width: 90%;
+    }
+
+}
